@@ -5,7 +5,7 @@
 <head>
 	<title>Home</title>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" >
-	
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/style.css" >
 </head>
 <body bgcolor='lightblue'>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
