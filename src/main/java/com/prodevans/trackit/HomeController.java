@@ -75,4 +75,26 @@ public class HomeController {
 		System.out.println("login adim controller ended");
 		return new ModelAndView("AdminLogin","msg","userid or password incorrect");
 	}
+	
+	@RequestMapping(value= "/register-user", method = RequestMethod.GET)
+	public String register_user()
+	{
+		return "RegisterUser";
+	}
+	
+
+	@RequestMapping(value= "/view-user", method = RequestMethod.GET)
+	public String view_user()
+	{
+		return "ViewUser";
+	}
+	
+	@RequestMapping(value= "/view-work", method = RequestMethod.GET)
+	public String view_work()
+	{
+		return "ViewWork";
+	}
+	
+	
+	
 }

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Admin</title>
+	<title>View Work</title>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" >
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/style.css" >
 </head>
@@ -13,27 +13,34 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  
-  <ul class="navbar-nav ml-auto mt-8 mt-lg-0 ">
-      <li class="nav-item">
-        <a class="nav-link" href="${pageContext.request.contextPath}/register-user">Register User <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="${pageContext.request.contextPath}/view-user">View Users</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="${pageContext.request.contextPath}/view-work">View Work</a>
-      </li>
-    </ul>
-  <form class="form-inline my-2 my-lg-0">  
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+ <form class="navbar-nav ml-auto mt-8 mt-lg-0">  
+      <a href="${pageContext.request.contextPath}/AdminLogin"><button class="btn btn-outline-success my-2 my-sm-0" type="button">Back</button></a>  
     </form>
 </nav>
-
-
-
-
-
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Emp.ID</th>
+      <th scope="col">User</th>
+      <th scope="col">Start Date</th>
+      <th scope="col">End Date</th>
+      <th scope="col">Status</th>
+      <th scope="col">Activity</th>
+      <th scope="col">Project</th>
+      <th scope="col">Work Package</th>
+      <th scope="col">Jira Task</th>
+      <th scope="col">Type</th>
+      <th scope="col">Subject</th>
+      <th scope="col">Hours</th>
+      <th scope="col">Comment</th>
+      <th scope="col">Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+  </tbody>
+</table>
 <div class="footer">
 	
   <p>A product of &#169PRODEVANS</p>
