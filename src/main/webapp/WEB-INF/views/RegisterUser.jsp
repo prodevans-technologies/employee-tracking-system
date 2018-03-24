@@ -27,18 +27,18 @@
   <div class="card-body">
   
       <label for="inputuser">User</label>
-      <input type="text" class="form-control" id="inputuser4" placeholder="User Name">
+      <input type="text" class="form-control" id="username" placeholder="User Name">
       
       <label for="inputPassword">Password</label>
-      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+      <input type="password" class="form-control" id="password" placeholder="Password">
     
     <label for="inputEmpid">Employee ID</label>
-    <input type="text" class="form-control" id="inputempid" placeholder="Employee ID">
+    <input type="text" class="form-control" id="userid" placeholder="Employee ID">
     
     <label for="inputRole">Role</label>
-    <input type="text" class="form-control" id="inputrole" placeholder="Role"><br>
+    <input type="text" class="form-control" id="role" placeholder="Role"><br>
   
-  <button type="submit" class="btn btn-primary">Create</button>
+  <button type="submit" class="btn btn-primary" id="register" name="register">Create</button>
   
   </div>
   </div>

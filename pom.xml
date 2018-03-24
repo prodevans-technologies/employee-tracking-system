@@ -32,7 +32,14 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
+		   <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-jdbc</artifactId>
+    <version>5.0.4.RELEASE</version>
+</dependency>
 
+		
 		<!-- AspectJ -->
 		<dependency>
 			<groupId>org.aspectj</groupId>
@@ -120,8 +127,12 @@
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>
+		
+		
 	</dependencies>
+	
 	<build>
+	
 		<plugins>
 			<plugin>
 				<artifactId>maven-eclipse-plugin</artifactId>

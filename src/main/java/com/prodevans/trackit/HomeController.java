@@ -37,7 +37,7 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "home";
+		return "Login";
 	}
 	@RequestMapping(value = "/AdminLogin", method = RequestMethod.GET)
 	public String adminLogin(Locale locale, Model model) {
