@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.prodevans.trackit.beans.User;
 import com.prodevans.trackit.services.UserService;
 import com.prodevans.trackit.validation.UserValidation;
-
 @Controller
 @RequestMapping(value="/register-user")
 public class UserController
