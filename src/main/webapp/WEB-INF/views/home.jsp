@@ -41,6 +41,9 @@
   </div>
   <button type="submit" class="btn btn-primary" >Submit</button>
 </form>
+<div>
+	<p style="color:red;">${failed}</p>
+</div>
 </div>
 
 </div>
