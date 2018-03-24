@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +26,7 @@
   <div class="card-body">
   
 
-<form action="${pageContext.request.contextPath}/login/login-user" commandName="userData" > 
+<form:form action="${pageContext.request.contextPath}/login/login-user" modelAttribute="userData"  method="post" > 
   <div class="form-group">
     <label for="exampleInputEmail1">User Name</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter user name">
@@ -40,7 +41,7 @@
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
   <button type="submit" class="btn btn-primary" >Submit</button>
-</form>
+</form:form>
 <div>
 	<p style="color:red;">${failed}</p>
 </div>
