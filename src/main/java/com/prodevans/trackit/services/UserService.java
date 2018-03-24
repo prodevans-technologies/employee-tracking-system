@@ -1,8 +1,8 @@
-package com.prodevans.trackit.dao;
+package com.prodevans.trackit.services;
 
 import com.prodevans.trackit.beans.User;
 
-public interface UserDAO
+public interface UserService 
 {
 	public void saveUser(User user);
 	public User loginUser(User user);

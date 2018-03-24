@@ -17,7 +17,7 @@
       <a href="${pageContext.request.contextPath}/AdminLogin"><button class="btn btn-outline-success my-2 my-sm-0" type="button">Back</button></a>  
     </form>
 </nav>
-<form>
+<form commandName="userData" action="${pageContext.request.contextPath}/register-user" method="post">
 <div class="container" style="padding-top:20px;">
 <div class="row">
 <div class="col-md-4" ></div>
