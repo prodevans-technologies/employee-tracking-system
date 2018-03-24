@@ -26,4 +26,11 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		
 		return "home";
 	}
+	@RequestMapping(value = "/AdminLogin", method = RequestMethod.GET)
+	public String AdminLogin(Locale locale, Model model) {
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		
+		return "AdminLogin";
+	}
 }

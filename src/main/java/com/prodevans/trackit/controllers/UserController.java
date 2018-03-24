@@ -21,7 +21,7 @@ import com.prodevans.trackit.beans.User;
 import com.prodevans.trackit.services.UserService;
 import com.prodevans.trackit.validation.UserValidation;
 @Controller
-@RequestMapping(value="/register-user")
+@RequestMapping(value="/login")
 public class UserController
 {
 	@Autowired
@@ -49,7 +49,7 @@ public class UserController
 		}
 	
 	}
-	@RequestMapping(value="/home",method=RequestMethod.GET)
+	@RequestMapping(value="/login-user",method=RequestMethod.GET)
 	public String showLogin(ModelMap model,HttpSession session)
 	{
 		if(session.getAttribute("user")==null)
@@ -60,7 +60,7 @@ public class UserController
 			return "redirect:success";
 		}
 	}
-	@RequestMapping(value="/home",method=RequestMethod.POST)
+	@RequestMapping(value="/login-user",method=RequestMethod.POST)
 	public String doLogin(ModelMap model,@ModelAttribute("userData")@Valid User user,HttpSession session)
 	{
 		if(user.getE_username()!=null && user.getE_password()!=null && session.getAttribute("user")==null)
