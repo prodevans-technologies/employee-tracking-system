@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+	<title>View User</title>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" >
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/style.css" >
 </head>
@@ -13,40 +13,26 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
- 
+ <form class="navbar-nav ml-auto mt-8 mt-lg-0">  
+      <a href="${pageContext.request.contextPath}/AdminLogin"><button class="btn btn-outline-success my-2 my-sm-0" type="button">Back</button></a>  
+    </form>
 </nav>
 
-<div class="container" style="padding-top:20px;">
-<div class="row">
-<div class="col-md-7" ></div>
-<div class="col-md-4 ">
-<div class="card">
-  <h5 class="card-header" >Login</h5>
-  <div class="card-body">
-  
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Emp.ID</th>
+      <th scope="col">User Name</th>
+      <th scope="col">Role</th>
+      <th scope="col">Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+  </tbody>
+</table>
 
-<form >
-  <div class="form-group">
-    <label for="exampleInputEmail1">User Name</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter user name">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your user name with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary" >Submit</button>
-</form>
-</div>
-
-</div>
-</div>
-</div>
-</div>
 
 <div class="footer">
 	
